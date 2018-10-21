@@ -1,0 +1,6 @@
+<language en>
+<b>Simulation example: rcfilter</b>
+<p>
+This example is setup to show the cutoff frequencies of
+a multiple stage RC low pass filter circuit.
+</language>

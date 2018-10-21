@@ -1,0 +1,6 @@
+<language en>
+<b>Simulation example: hierarchy</b>
+<p>
+This example is used to show how using an Operating Point analysis
+simulation is used to verify expected current in a circuit.
+</language>

@@ -1,0 +1,8 @@
+<language en>
+<b>Simulation example: Fet_Characterization</b>
+<p>
+This example generates characteristic MOSFET curves, showing the
+transistor turn on as the gate voltage is swept.  It can also be
+used to view a sweep over the drain voltage with a fixed gate voltage.
+DC Sweep type simulation is used in this example.
+</language>

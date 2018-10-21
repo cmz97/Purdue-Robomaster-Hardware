@@ -1,0 +1,8 @@
+<language en>
+<b>Simulation example: convert</b>
+<p>
+This example is meant to show how to convert from a schematic that is
+not yet simulation-capable to one that is.  Open convert.sch and select
+all parts, then choose Add Model from the context menu.  Converted.sch is
+the result after mapping all parts, and is simulation-ready.
+</language>

@@ -1,0 +1,6 @@
+<language en>
+<b>Simulation example: mapgates</b>
+<p>
+This example shows how a multigate part can be mapped using
+a subcircuit.  An Operating Point simulation is pre-configured.
+</language>

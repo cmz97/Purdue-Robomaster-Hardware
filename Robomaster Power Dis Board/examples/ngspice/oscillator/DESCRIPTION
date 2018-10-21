@@ -1,0 +1,6 @@
+<language en>
+<b>Simulation example: oscillator</b>
+<p>
+This example shows a BJT circuit configuration which oscillates at 100Mhz.
+Capacitor C1 has an initial condition set.  Transient simulation configured.
+</language>

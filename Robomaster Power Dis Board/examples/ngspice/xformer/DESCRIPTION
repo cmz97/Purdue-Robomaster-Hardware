@@ -1,0 +1,7 @@
+<language en>
+<b>Simulation example: xformer</b>
+<p>
+This example shows how to create a parameterized subcircuit and pass in
+values via a .PARAM statement.  Here the turns ratio for a trnsformer subcircuit
+is set via a .PARAM label.
+</language>

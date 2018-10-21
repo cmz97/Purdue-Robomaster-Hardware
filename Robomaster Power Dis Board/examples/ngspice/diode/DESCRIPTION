@@ -1,0 +1,7 @@
+<language en>
+<b>Simulation example: diode</b>
+<p>
+This example shows the use of Transient type simulation, to view the
+operation of a simple diode circuit with sinusoidal input.  It also makes
+use of .PARAM statements to add variables for parameterized parts.
+</language>

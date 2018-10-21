@@ -1,0 +1,7 @@
+<language en>
+<b>Simulation example: hierarchy</b>
+<p>
+This example demonstrates a simulation-capable design using
+hierarchical components.  a .PARAM statement is added at the top
+level, to set the value of a component in a submodule sheet.
+</language>

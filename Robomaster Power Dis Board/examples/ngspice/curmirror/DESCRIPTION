@@ -1,0 +1,7 @@
+<language en>
+<b>Simulation example: curmirrir</b>
+<p>
+This example is used to show how an Operating Point analysis can be used
+to verify a current mirrir circuit.  We expect the current through both
+transistors to be the same.
+</language>
