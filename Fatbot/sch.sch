@@ -7159,6 +7159,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="220.98" y="10.16" size="1.778" layer="97">5V REGULATOR 500MA</text>
 <text x="261.62" y="134.62" size="1.778" layer="97">9DOF SENSOR</text>
 <text x="5.08" y="137.16" size="1.778" layer="97">2C_BATTERY_CHARGER</text>
+<text x="299.72" y="-17.78" size="1.778" layer="91">TODO: Test points</text>
 </plain>
 <instances>
 <instance part="MY_RIO_A" gate="G$1" x="-99.06" y="177.8"/>

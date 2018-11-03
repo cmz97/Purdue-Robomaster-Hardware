@@ -20835,11 +20835,6 @@ Source: AVX .. aphvc.pdf</description>
 </part>
 <part name="GND7" library="stm32f4stamp" deviceset="GND" device=""/>
 <part name="GND8" library="stm32f4stamp" deviceset="GND" device=""/>
-<part name="R24" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
-</part>
 <part name="EMER_SWITCH" library="SparkFun-Connectors" deviceset="M02" device="-JST-2-PTH-NO_SILK"/>
 <part name="MY_RIO_POWER" library="SparkFun-Connectors" deviceset="M02" device="-JST-2-PTH-NO_SILK"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -20960,11 +20955,6 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="GND7" gate="1" x="22.86" y="162.56"/>
 <instance part="GND8" gate="1" x="73.66" y="147.32"/>
-<instance part="R24" gate="G$1" x="134.62" y="182.88" rot="R90">
-<attribute name="OC_NEWARK" x="134.62" y="182.88" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="134.62" y="182.88" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="134.62" y="182.88" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="EMER_SWITCH" gate="G$1" x="-48.26" y="50.8"/>
 <instance part="MY_RIO_POWER" gate="G$1" x="-48.26" y="33.02"/>
 <instance part="GND2" gate="1" x="-38.1" y="30.48"/>
@@ -21824,13 +21814,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="114.3" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="175.26" x2="119.38" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="BATT_CHARGING" gate="G$1" pin="A"/>
-<junction x="119.38" y="175.26"/>
-<wire x1="119.38" y1="175.26" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="175.26" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
-<junction x="134.62" y="175.26"/>
-<label x="142.24" y="175.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -21838,14 +21821,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="BATT_CHARGING" gate="G$1" pin="C"/>
 <wire x1="119.38" y1="165.1" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="BATTERY_MONITOR_1" class="3">
-<segment>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="187.96" x2="134.62" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="190.5" x2="142.24" y2="190.5" width="0.1524" layer="91"/>
-<label x="142.24" y="190.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CHARGER" class="0">

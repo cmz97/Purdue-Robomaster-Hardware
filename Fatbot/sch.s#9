@@ -20771,7 +20771,6 @@ Source: AVX .. aphvc.pdf</description>
 </classes>
 <parts>
 <part name="MY_RIO_A" library="pinhead" deviceset="PINHD-2X17" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-2X17" device=""/>
 <part name="U2" library="microbuilder" deviceset="DRV8871" device="" value="DRV8871"/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF/50V"/>
 <part name="C5" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="22uF/63V"/>
@@ -20898,7 +20897,6 @@ Source: AVX .. aphvc.pdf</description>
 </plain>
 <instances>
 <instance part="MY_RIO_A" gate="G$1" x="-99.06" y="177.8"/>
-<instance part="JP2" gate="G$1" x="-50.8" y="177.8"/>
 <instance part="U2" gate="G$1" x="33.02" y="114.3"/>
 <instance part="C4" gate="G$1" x="48.26" y="101.6"/>
 <instance part="C5" gate="G$1" x="55.88" y="101.6"/>

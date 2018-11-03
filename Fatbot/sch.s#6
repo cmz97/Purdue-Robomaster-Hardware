@@ -21571,12 +21571,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-93.98" y1="177.8" x2="-86.36" y2="177.8" width="0.1524" layer="91"/>
 <label x="-86.36" y="177.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ENCODER2" gate="G$1" pin="3"/>
+<wire x1="-109.22" y1="88.9" x2="-111.76" y2="88.9" width="0.1524" layer="91"/>
+<label x="-111.76" y="88.9" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="ENCODER_2B" class="0">
 <segment>
 <pinref part="MY_RIO_A" gate="G$1" pin="22"/>
 <wire x1="-93.98" y1="172.72" x2="-86.36" y2="172.72" width="0.1524" layer="91"/>
 <label x="-86.36" y="172.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ENCODER2" gate="G$1" pin="4"/>
+<wire x1="-109.22" y1="86.36" x2="-111.76" y2="86.36" width="0.1524" layer="91"/>
+<label x="-111.76" y="86.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="ULTRASONIC_2_TRIG" class="0">
@@ -21740,12 +21750,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-101.6" y1="170.18" x2="-109.22" y2="170.18" width="0.1524" layer="91"/>
 <label x="-109.22" y="170.18" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="ENCODER1" gate="G$1" pin="4"/>
+<wire x1="-109.22" y1="106.68" x2="-111.76" y2="106.68" width="0.1524" layer="91"/>
+<label x="-111.76" y="106.68" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="ENCODER_1A" class="0">
 <segment>
 <pinref part="MY_RIO_A" gate="G$1" pin="25"/>
 <wire x1="-101.6" y1="167.64" x2="-109.22" y2="167.64" width="0.1524" layer="91"/>
 <label x="-109.22" y="167.64" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="ENCODER1" gate="G$1" pin="3"/>
+<wire x1="-109.22" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
+<label x="-111.76" y="109.22" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="ULTRASONIC_2_ECHO" class="0">
@@ -22247,17 +22267,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-78.74" y1="114.3" x2="-81.28" y2="114.3" width="0.1524" layer="91"/>
 <label x="-81.28" y="114.3" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="MOTOR2" gate="G$1" pin="2"/>
-<wire x1="-78.74" y1="111.76" x2="-81.28" y2="111.76" width="0.1524" layer="91"/>
-<label x="-81.28" y="111.76" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="MOTOR2_-" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT1"/>
 <wire x1="170.18" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
 <label x="180.34" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR2" gate="G$1" pin="2"/>
+<wire x1="-78.74" y1="111.76" x2="-81.28" y2="111.76" width="0.1524" layer="91"/>
+<label x="-81.28" y="111.76" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -22331,25 +22351,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="152.4" y="58.42" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$4" class="1">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="193.04" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="VCC"/>
-<wire x1="22.86" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="193.04" x2="22.86" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="177.8" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
-<junction x="22.86" y="193.04"/>
-<wire x1="68.58" y1="177.8" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="177.8" x2="22.86" y2="175.26" width="0.1524" layer="91"/>
-<junction x="22.86" y="177.8"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<pinref part="U3" gate="A" pin="COMP"/>
-<wire x1="68.58" y1="177.8" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
-<junction x="68.58" y="177.8"/>
-</segment>
-</net>
 <net name="N$18" class="1">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -22396,12 +22397,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="CHARGER" class="0">
 <segment>
-<label x="20.32" y="193.04" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="CHARGER" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="7.62" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
 <label x="-38.1" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="193.04" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="VCC"/>
+<wire x1="22.86" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="193.04" x2="22.86" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="177.8" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
+<junction x="22.86" y="193.04"/>
+<wire x1="68.58" y1="177.8" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="177.8" x2="22.86" y2="175.26" width="0.1524" layer="91"/>
+<junction x="22.86" y="177.8"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="U3" gate="A" pin="COMP"/>
+<wire x1="68.58" y1="177.8" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
+<junction x="68.58" y="177.8"/>
+<label x="20.32" y="193.04" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="V_MOTOR" class="0">
@@ -22489,34 +22505,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="VL53L0X2" gate="G$1" pin="1"/>
 <wire x1="-109.22" y1="15.24" x2="-111.76" y2="15.24" width="0.1524" layer="91"/>
 <label x="-111.76" y="15.24" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="1_A" class="0">
-<segment>
-<pinref part="ENCODER1" gate="G$1" pin="3"/>
-<wire x1="-109.22" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
-<label x="-111.76" y="109.22" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="1_B" class="0">
-<segment>
-<pinref part="ENCODER1" gate="G$1" pin="4"/>
-<wire x1="-109.22" y1="106.68" x2="-111.76" y2="106.68" width="0.1524" layer="91"/>
-<label x="-111.76" y="106.68" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="2_A" class="0">
-<segment>
-<pinref part="ENCODER2" gate="G$1" pin="3"/>
-<wire x1="-109.22" y1="88.9" x2="-111.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="-111.76" y="88.9" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="2_B" class="0">
-<segment>
-<pinref part="ENCODER2" gate="G$1" pin="4"/>
-<wire x1="-109.22" y1="86.36" x2="-111.76" y2="86.36" width="0.1524" layer="91"/>
-<label x="-111.76" y="86.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="ULTRASONIC_1_TRIG" class="0">
@@ -22704,6 +22692,40 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,91.44,109.22,U2,VM,V_MOTOR,,,"/>
+<approved hash="104,1,91.44,114.3,U2,PGND,GND,,,"/>
+<approved hash="104,1,170.18,109.22,U1,VM,V_MOTOR,,,"/>
+<approved hash="104,1,170.18,114.3,U1,PGND,GND,,,"/>
+<approved hash="104,1,78.74,177.8,U3,VCC,CHARGER,,,"/>
+<approved hash="202,1,78.74,172.72,U3,TS,,,,"/>
+<approved hash="104,1,78.74,160.02,U3,VSS,GND,,,"/>
+<approved hash="113,1,-97.8323,179.296,MY_RIO_A,,,,,"/>
+<approved hash="113,1,-43.8573,73.9496,BATTERY,,,,,"/>
+<approved hash="113,1,119.702,174.211,BATT_CHARGING,,,,,"/>
+<approved hash="113,1,-41.4011,53.6296,EMER_SWITCH,,,,,"/>
+<approved hash="113,1,-40.4103,35.8496,MY_RIO_POWER,,,,,"/>
+<approved hash="113,1,-40.2005,20.6096,MY_RIO_SWITCH,,,,,"/>
+<approved hash="113,1,-50.1227,108.93,VL53L0X,,,,,"/>
+<approved hash="113,1,-53.5697,88.6104,I2C_BREAK_OUT,,,,,"/>
+<approved hash="113,1,-106.003,131.79,UART,,,,,"/>
+<approved hash="113,1,-43.8573,7.90956,CHARGER,,,,,"/>
+<approved hash="113,1,-106.129,108.93,ENCODER1,,,,,"/>
+<approved hash="113,1,-75.5227,134.33,MOTOR1,,,,,"/>
+<approved hash="113,1,-75.5227,111.47,MOTOR2,,,,,"/>
+<approved hash="113,1,-75.5227,89.8804,ADDR_LED,,,,,"/>
+<approved hash="113,1,-45.72,134.91,ANALOG_IN,,,,,"/>
+<approved hash="113,1,-77.2738,70.8304,ANALOG_OUT,,,,,"/>
+<approved hash="113,1,-106.129,88.6104,ENCODER2,,,,,"/>
+<approved hash="113,1,-106.003,69.5604,SERVO1,,,,,"/>
+<approved hash="113,1,-106.003,49.2404,SERVO2,,,,,"/>
+<approved hash="113,1,-71.12,53.6296,5VBUS,,,,,"/>
+<approved hash="113,1,-71.12,33.3096,3V3BUS,,,,,"/>
+<approved hash="113,1,-106.003,30.1904,VL53L0X1,,,,,"/>
+<approved hash="113,1,-106.003,9.87044,VL53L0X2,,,,,"/>
+<approved hash="113,1,48.26,66.6217,D1,,,,,"/>
+<approved hash="113,1,48.26,59.0017,D2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

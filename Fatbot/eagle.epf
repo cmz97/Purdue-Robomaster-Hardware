@@ -9,6 +9,7 @@ AutoSaveProject=1
 UsedLibrary="/Applications/EAGLE-8.6.0/lbr/KevinMade.lbr"
 UsedLibrary="/Applications/EAGLE-8.6.0/lbr/SRG.lbr"
 UsedLibrary="/Applications/EAGLE-8.6.0/lbr/diy-modules.lbr"
+UsedLibraryUrn="urn:adsk.eagle:library:93"
 UsedLibrary="/Applications/EAGLE-7.2.0/lbr/19inch.lbr"
 UsedLibrary="/Applications/EAGLE-7.2.0/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE-7.2.0/lbr/41xx.lbr"
@@ -370,12 +371,6 @@ UsedLibrary="/Applications/EAGLE-7.2.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE-7.2.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.2.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.2.0/lbr/zilog.lbr"
-UsedLibraryUrn="urn:adsk.eagle:library:93"
-
-[Win_1]
-Type="Control Panel"
-Number=0
 
 [Desktop]
 Screen="2560 1080"
-Window="Win_1"
