@@ -7,10 +7,17 @@ Currently, this repository include the following presentable projects:
 
 # Fatbot #
 Fat bot is connected to National Instrument's myRIO board. This robot controller is for Purdue University's ME375 System Controler class. 
+## Input from myRIO ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/0.png)
+## 2 cell battery charger ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/1.png)
+## 9 DOF sensor ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/2.png)
+## Motor Drivers ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/3.png)
+## Battery Monitor ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/4.png)
+## 5v 500mA regulator ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/5.png)
+## Outputs ##
 ![alt text](https://raw.githubusercontent.com/cmz97/Purdue-Robomaster-Hardware/master/Image/6.png)
