@@ -6426,15 +6426,15 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="TO_STM32" library="NewKevinMade" deviceset="S3B-PH-SM4_TB" device=""/>
-<part name="TO_HUD" library="NewKevinMade" deviceset="S3B-PH-SM4_TB" device=""/>
+<part name="TO_SUPER_CAP" library="NewKevinMade" deviceset="S3B-PH-SM4_TB" device=""/>
 <part name="X1" library="microbuilder" deviceset="MICROSD" device="" value="microsd"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="R17" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="100K"/>
 <part name="SJ1" library="microbuilder" deviceset="SOLDERJUMPER_CLOSED" device=""/>
-<part name="I2C_SCREEN" library="NewKevinMade" deviceset="S4B-PH-SM4_TB" device=""/>
+<part name="I2C_OLED" library="NewKevinMade" deviceset="S4B-PH-SM4_TB" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="TO_ELE_DIS" library="NewKevinMade" deviceset="S6B-PH-SM4_TB" device=""/>
-<part name="I2C_AUX1" library="NewKevinMade" deviceset="S4B-PH-SM4_TB" device=""/>
+<part name="I2C_HUD" library="NewKevinMade" deviceset="S4B-PH-SM4_TB" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="I2C_AUX2" library="NewKevinMade" deviceset="S4B-PH-SM4_TB" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6464,6 +6464,7 @@ Inexpensive i2c i/o expander - 8 general purpose i/o pins with optional pullups<
 <text x="12.7" y="119.38" size="1.778" layer="91">NC: IO0,IO2
 VBAT SENSE: IO35
 LED: IO13</text>
+<text x="154.94" y="22.86" size="1.778" layer="95">CHARGE OR NOT NOT DEFINED</text>
 </plain>
 <instances>
 <instance part="C6" gate="G$1" x="30.48" y="144.78" smashed="yes">
@@ -6768,7 +6769,7 @@ LED: IO13</text>
 <instance part="TO_STM32" gate="G$1" x="340.36" y="81.28" smashed="yes">
 <attribute name="NAME" x="342.9" y="102.108" size="1.778" layer="95"/>
 </instance>
-<instance part="TO_HUD" gate="G$1" x="340.36" y="53.34" smashed="yes">
+<instance part="TO_SUPER_CAP" gate="G$1" x="340.36" y="53.34" smashed="yes">
 <attribute name="NAME" x="342.9" y="74.168" size="1.778" layer="95"/>
 </instance>
 <instance part="X1" gate="G$1" x="193.04" y="139.7" smashed="yes">
@@ -6786,7 +6787,7 @@ LED: IO13</text>
 <attribute name="NAME" x="220.98" y="134.62" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="227.33" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="I2C_SCREEN" gate="G$1" x="375.92" y="78.74" smashed="yes">
+<instance part="I2C_OLED" gate="G$1" x="375.92" y="78.74" smashed="yes">
 <attribute name="NAME" x="378.46" y="102.108" size="1.778" layer="95"/>
 </instance>
 <instance part="GND11" gate="1" x="373.38" y="78.74" smashed="yes">
@@ -6795,7 +6796,7 @@ LED: IO13</text>
 <instance part="TO_ELE_DIS" gate="G$1" x="337.82" y="12.7" smashed="yes">
 <attribute name="NAME" x="342.9" y="43.688" size="1.778" layer="95"/>
 </instance>
-<instance part="I2C_AUX1" gate="G$1" x="375.92" y="50.8" smashed="yes">
+<instance part="I2C_HUD" gate="G$1" x="375.92" y="50.8" smashed="yes">
 <attribute name="NAME" x="378.46" y="74.168" size="1.778" layer="95"/>
 </instance>
 <instance part="GND12" gate="1" x="373.38" y="50.8" smashed="yes">
@@ -7098,8 +7099,8 @@ LED: IO13</text>
 <junction x="337.82" y="58.42"/>
 <wire x1="337.82" y1="58.42" x2="337.82" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="TO_HUD" gate="G$1" pin="JST3"/>
-<pinref part="TO_HUD" gate="G$1" pin="GND*"/>
+<pinref part="TO_SUPER_CAP" gate="G$1" pin="JST3"/>
+<pinref part="TO_SUPER_CAP" gate="G$1" pin="GND*"/>
 </segment>
 <segment>
 <wire x1="340.36" y1="93.98" x2="337.82" y2="93.98" width="0.1524" layer="91"/>
@@ -7126,20 +7127,20 @@ LED: IO13</text>
 <junction x="170.18" y="121.92"/>
 </segment>
 <segment>
-<pinref part="I2C_SCREEN" gate="G$1" pin="JST4"/>
+<pinref part="I2C_OLED" gate="G$1" pin="JST4"/>
 <wire x1="375.92" y1="91.44" x2="373.38" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="91.44" x2="373.38" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="I2C_SCREEN" gate="G$1" pin="GND*"/>
+<pinref part="I2C_OLED" gate="G$1" pin="GND*"/>
 <wire x1="373.38" y1="83.82" x2="375.92" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="83.82" x2="373.38" y2="81.28" width="0.1524" layer="91"/>
 <junction x="373.38" y="83.82"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="I2C_AUX1" gate="G$1" pin="JST4"/>
+<pinref part="I2C_HUD" gate="G$1" pin="JST4"/>
 <wire x1="375.92" y1="63.5" x2="373.38" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="63.5" x2="373.38" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="I2C_AUX1" gate="G$1" pin="GND*"/>
+<pinref part="I2C_HUD" gate="G$1" pin="GND*"/>
 <wire x1="373.38" y1="55.88" x2="375.92" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="55.88" x2="373.38" y2="53.34" width="0.1524" layer="91"/>
 <junction x="373.38" y="55.88"/>
@@ -7401,7 +7402,7 @@ LED: IO13</text>
 </segment>
 <segment>
 <wire x1="340.36" y1="71.12" x2="337.82" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="TO_HUD" gate="G$1" pin="JST1"/>
+<pinref part="TO_SUPER_CAP" gate="G$1" pin="JST1"/>
 <label x="335.28" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -7418,7 +7419,7 @@ LED: IO13</text>
 </segment>
 <segment>
 <wire x1="340.36" y1="68.58" x2="337.82" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="TO_HUD" gate="G$1" pin="JST2"/>
+<pinref part="TO_SUPER_CAP" gate="G$1" pin="JST2"/>
 <label x="335.28" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -7465,7 +7466,7 @@ LED: IO13</text>
 <label x="170.18" y="213.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="I2C_SCREEN" gate="G$1" pin="JST2"/>
+<pinref part="I2C_OLED" gate="G$1" pin="JST2"/>
 <wire x1="375.92" y1="96.52" x2="373.38" y2="96.52" width="0.1524" layer="91"/>
 <label x="373.38" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -7475,7 +7476,7 @@ LED: IO13</text>
 <pinref part="TO_ELE_DIS" gate="G$1" pin="JST2"/>
 </segment>
 <segment>
-<pinref part="I2C_AUX1" gate="G$1" pin="JST2"/>
+<pinref part="I2C_HUD" gate="G$1" pin="JST2"/>
 <wire x1="375.92" y1="68.58" x2="373.38" y2="68.58" width="0.1524" layer="91"/>
 <label x="373.38" y="68.58" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -7509,7 +7510,7 @@ LED: IO13</text>
 <label x="170.18" y="210.82" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="I2C_SCREEN" gate="G$1" pin="JST3"/>
+<pinref part="I2C_OLED" gate="G$1" pin="JST3"/>
 <wire x1="375.92" y1="93.98" x2="373.38" y2="93.98" width="0.1524" layer="91"/>
 <label x="373.38" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -7519,7 +7520,7 @@ LED: IO13</text>
 <pinref part="TO_ELE_DIS" gate="G$1" pin="JST3"/>
 </segment>
 <segment>
-<pinref part="I2C_AUX1" gate="G$1" pin="JST3"/>
+<pinref part="I2C_HUD" gate="G$1" pin="JST3"/>
 <wire x1="375.92" y1="66.04" x2="373.38" y2="66.04" width="0.1524" layer="91"/>
 <label x="373.38" y="66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -7814,12 +7815,12 @@ LED: IO13</text>
 <label x="223.52" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C_SCREEN" gate="G$1" pin="JST1"/>
+<pinref part="I2C_OLED" gate="G$1" pin="JST1"/>
 <wire x1="375.92" y1="99.06" x2="373.38" y2="99.06" width="0.1524" layer="91"/>
 <label x="373.38" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="I2C_AUX1" gate="G$1" pin="JST1"/>
+<pinref part="I2C_HUD" gate="G$1" pin="JST1"/>
 <wire x1="375.92" y1="71.12" x2="373.38" y2="71.12" width="0.1524" layer="91"/>
 <label x="373.38" y="71.12" size="1.778" layer="95" rot="R180"/>
 </segment>

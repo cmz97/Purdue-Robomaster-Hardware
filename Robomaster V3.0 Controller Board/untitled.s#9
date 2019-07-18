@@ -7266,6 +7266,11 @@ LED: IO13</text>
 <label x="127" y="86.36" size="1.778" layer="95"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="IO0/A2_1"/>
+<wire x1="78.74" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<label x="81.28" y="116.84" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RXD0" class="1">
 <segment>
@@ -8144,7 +8149,7 @@ LED: IO13</text>
 <pinref part="X2" gate="G$1" pin="IO12/A2_5"/>
 </segment>
 </net>
-<net name="VIOUT" class="1">
+<net name="GPIO2" class="1">
 <segment>
 <wire x1="78.74" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <label x="81.28" y="114.3" size="1.778" layer="95"/>
@@ -8204,13 +8209,6 @@ LED: IO13</text>
 <wire x1="340.36" y1="27.94" x2="337.82" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="TO_ELE_DIS" gate="G$1" pin="JST6"/>
 <label x="337.82" y="27.94" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="IO0" class="1">
-<segment>
-<pinref part="X2" gate="G$1" pin="IO0/A2_1"/>
-<wire x1="78.74" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
-<label x="81.28" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8278,11 +8276,9 @@ LED: IO13</text>
 <approved hash="106,1,78.74,66.04,A2_I34,,,,,"/>
 <approved hash="106,1,27.94,96.52,A3_I39,,,,,"/>
 <approved hash="106,1,27.94,99.06,A4_IO36,,,,,"/>
-<approved hash="106,1,340.36,30.48,CAP_OR_BAT,,,,,"/>
-<approved hash="106,1,340.36,27.94,CHARGE_OR_NOT,,,,,"/>
-<approved hash="106,1,124.46,86.36,GPIO0,,,,,"/>
 <approved hash="106,1,256.54,91.44,INT1,,,,,"/>
-<approved hash="106,1,78.74,116.84,IO0,,,,,"/>
+<approved hash="106,1,78.74,106.68,IO12,,,,,"/>
+<approved hash="106,1,78.74,104.14,IO13,,,,,"/>
 <approved hash="106,1,78.74,99.06,IO15_A8,,,,,"/>
 <approved hash="106,1,78.74,86.36,IO21,,,,,"/>
 <approved hash="106,1,78.74,73.66,IO27_A10,,,,,"/>
